@@ -122,6 +122,26 @@ add_action( 'widgets_init', 'admoneo_travel_widgets_init' );
 function admoneo_travel_scripts() {
 	wp_enqueue_style( 'admoneo-travel-style', get_stylesheet_uri() );
 
+	//custom styles
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '3.3.7' );
+
+    //???
+	wp_enqueue_style( 'ionicons-css', get_template_directory_uri() . '/assets/css/ionicons.min.css', array(), '3.2' );
+
+	wp_enqueue_style( 'owl-carousel-css', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), '2.2.1' );
+
+	wp_enqueue_style( 'owl-theme-css', get_template_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), '2.2.1' );
+
+    //????
+	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/assets/css/flexslider.css', array(), '2.7.0' );
+
+	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/assets/css/main.css', array(), '3.2');
+
+	//need or not???
+	wp_enqueue_style( 'contact-css', get_template_directory_uri() . '/assets/css/contact.css');
+
+	//custom scripts
+
 	wp_enqueue_script( 'admoneo-travel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'admoneo-travel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
