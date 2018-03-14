@@ -76,7 +76,7 @@
 			</h2>
 			<ol class="breadcrumb">
 				<li><a href="index.php">Home</a></li>
-				<li class="active">&nbsp;проживание</li>
+				<li class="active">&nbsp;<?php the_title(); ?></li>
 			</ol>
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
