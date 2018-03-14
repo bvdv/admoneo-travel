@@ -72,7 +72,7 @@
 <section class="section-background">
 		<div class="container">
 			<h2 class="page-header">
-				Проживание
+				<?php the_title(); ?>
 			</h2>
 			<ol class="breadcrumb">
 				<li><a href="index.php">Home</a></li>
