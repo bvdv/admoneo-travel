@@ -21,6 +21,68 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<nav class="navbar navbar-default">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.php" title="HOME">Admoneo <span>travel</span></a>
+			</div> <!-- /.navbar-header -->
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+				
+
+				
+	            <?php wp_nav_menu(array(
+	            	'theme_location'  => 'primary', 
+	            	'menu_class'      => 'nav navbar-nav navbar-right',
+	            	'container'       => 'ul',
+	            	//'container_class' => 'collapse navbar-collapse',
+
+
+
+	            )); ?>
+				
+				
+                
+
+                <!--
+			    <ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.php">Home</a></li>
+					<li><a href="transport.html">Транспорт</a></li>
+					<li><a href="prozhivanie.html">Проживание</a></li>
+					<li><a href="zdor_bez.html">Здоровье и безопасность</a></li>
+					<li><a href="media.html">Видео, книги, карты</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="services.html">services</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>--> <!-- /.nav -->
+		    </div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container -->
+	</nav>
+
+<section class="section-background">
+		<div class="container">
+			<h2 class="page-header">
+				Проживание
+			</h2>
+			<ol class="breadcrumb">
+				<li><a href="index.php">Home</a></li>
+				<li class="active">&nbsp;проживание</li>
+			</ol>
+		</div> <!-- /.container -->
+	</section> <!-- /.section-background -->
+
+
+<!--	
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'admoneo-travel' ); ?></a>
 
@@ -42,7 +104,7 @@
 				?>
 				<p class="site-description"><?php echo $admoneo_travel_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'admoneo-travel' ); ?></button>
@@ -52,7 +114,8 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav>
+	</header>
+-->  
 
 	<div id="content" class="site-content">
