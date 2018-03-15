@@ -70,14 +70,21 @@
 	</nav>
 
 <section class="section-background">
+
 		<div class="container">
+
 			<h2 class="page-header">
 				<?php the_title(); ?>
 			</h2>
+			<div class='skyswid' data-skyscanner-widget="SearchWidget"></div>
 			<ol class="breadcrumb">
+				<li></li>
 				<li><a href="index.php">Home</a></li>
 				<li class="active">&nbsp;<?php the_title(); ?></li>
+				<li></li>
 			</ol>
+			
+            <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
 
@@ -119,3 +126,4 @@
 -->  
 
 	<div id="content" class="site-content">
+<div class='skyswid' data-skyscanner-widget="SearchWidget"></div>

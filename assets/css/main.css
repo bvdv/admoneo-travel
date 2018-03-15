@@ -90,6 +90,16 @@ p:hover{
 ||				3. Header
 ==================================================*/
 			/*navbar*/
+.skyswid{
+	
+	color: black;
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+    font: unset !important;
+    font-size: 18px !important;
+    
+}	
 .navbar{
 	margin-bottom: 0px;
 }
