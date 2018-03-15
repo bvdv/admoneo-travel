@@ -4,11 +4,16 @@
 /*@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);*/
 /*@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);*/
 
+html
+{
+	font-size: 14px;
+}
 body
 {
 	font-family: 'Roboto', 'Open-Sans', sans-serif;
 	overflow-x: hidden;
 	color: #fff;
+	
 }
 /*Owl Carousel*/
 .owl-prev, .owl-next
@@ -96,7 +101,7 @@ p:hover{
 	margin: auto;
     width: 50%;
     padding: 10px;
-    
+
     
 }	
 .navbar{

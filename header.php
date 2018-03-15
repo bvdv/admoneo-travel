@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+    
 	<?php wp_head(); ?>
 </head>
 
@@ -76,7 +76,9 @@
 			<h2 class="page-header">
 				<?php the_title(); ?>
 			</h2>
-			<div class='skyswid' data-skyscanner-widget="SearchWidget"></div>
+			<div class='skyswid' >
+			<div data-skyscanner-widget="SearchWidget"></div>
+		    </div>
 			<ol class="breadcrumb">
 				<li></li>
 				<li><a href="index.php">Home</a></li>
@@ -126,6 +128,3 @@
 -->  
 
 	<div id="content" class="site-content">
-<div class="skyswid">
-<div data-skyscanner-widget="SearchWidget"></div>
-</div>
