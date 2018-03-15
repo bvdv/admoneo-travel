@@ -126,4 +126,6 @@
 -->  
 
 	<div id="content" class="site-content">
-<div class='skyswid' data-skyscanner-widget="SearchWidget"></div>
+<div class="skyswid">
+<div data-skyscanner-widget="SearchWidget"></div>
+</div>
