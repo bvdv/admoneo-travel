@@ -45,27 +45,8 @@
 	            	'theme_location'  => 'primary', 
 	            	'menu_class'      => 'nav navbar-nav navbar-right',
 	            	'container'       => 'ul',
-	            	//'container_class' => 'collapse navbar-collapse',
-
-
-
 	            )); ?>
-				
-				
-                
-
-                <!--
-			    <ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="transport.html">Транспорт</a></li>
-					<li><a href="prozhivanie.html">Проживание</a></li>
-					<li><a href="zdor_bez.html">Здоровье и безопасность</a></li>
-					<li><a href="media.html">Видео, книги, карты</a></li>
-					<li><a href="about.html">about</a></li>
-					<li><a href="services.html">services</a></li>
-					<li><a href="contact.html">contact</a></li>
-				</ul>--> <!-- /.nav -->
-		    </div><!-- /.navbar-collapse -->
+			</div><!-- /.navbar-collapse -->
 	  	</div><!-- /.container -->
 	</nav>
 
@@ -73,14 +54,14 @@
 
 		<div class="container">
 			<?php if (is_page( $page = 'Flights' )) : ?>
-            <div class='skyswid' >
-            <h1>Find your flight to Italy!</h1>
-			<div data-skyscanner-widget="SearchWidget"></div>
-		    </div>
+              <div class='skyswid'>
+                <h1>Find your flight to Italy!</h1>
+			    <div data-skyscanner-widget="SearchWidget"></div>
+		      </div>
 			<?php endif;?>
 
 			<?php if (is_page( $page = 'Accommodation' )) : ?>
-            <h3>Find your the best Accommodation in Italy!</h3>
+              <h1>Find your the best Accommodation in Italy!</h1>
             <?php endif;?>
 			
 
