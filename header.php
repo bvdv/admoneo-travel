@@ -80,7 +80,14 @@
 			<div data-skyscanner-widget="SearchWidget"></div>
 		    </div>
 			<?php endif;?>
-			<h3>Find your the best flight to Italy!</h3>
+
+			<?php if (is_page( $page = 'Accommodation' )) : ?>
+            <h3>Find your the best Accommodation in Italy!</h3>
+            
+            
+            
+			<?php endif;?>
+			
 
 			
 		</div> <!-- /.container -->
