@@ -72,21 +72,17 @@
 <section class="section-background">
 
 		<div class="container">
-
-			<h2 class="page-header">
-				<?php the_title(); ?>
-			</h2>
-			<div class='skyswid' >
+			<?php if (is_page( $page = 'Flights' )) : ?>
+            <h3>Find your the best flight to Italy!</h3>
+            
+            
+            <div class='skyswid' >
 			<div data-skyscanner-widget="SearchWidget"></div>
 		    </div>
-			<ol class="breadcrumb">
-				<li></li>
-				<li><a href="index.php">Home</a></li>
-				<li class="active">&nbsp;<?php the_title(); ?></li>
-				<li></li>
-			</ol>
+			<?php endif;?>
+			<h3>Find your the best flight to Italy!</h3>
+
 			
-            <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 		</div> <!-- /.container -->
 	</section> <!-- /.section-background -->
 

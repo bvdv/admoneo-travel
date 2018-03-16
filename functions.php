@@ -158,6 +158,10 @@ function admoneo_travel_scripts() {
 
     wp_enqueue_script( 'cystom-scripts', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '20151215', true);
 
+    if (is_page( $page = 'Flights' )){
+    	wp_enqueue_script( 'skyscanner_widget', 'https://widgets.skyscanner.net/widget-server/js/loader.js', array(), '20180315', true);
+    }
+    //<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
