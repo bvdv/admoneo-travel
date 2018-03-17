@@ -42,7 +42,8 @@
 
 				
 	            <?php wp_nav_menu(array(
-	            	'theme_location'  => 'primary', 
+	            	'theme_location'  => 'menu-1',
+	            	'menu_id'         => 'primary-menu', 
 	            	'menu_class'      => 'nav navbar-nav navbar-right',
 	            	'container'       => 'ul',
 	            )); ?>
@@ -54,6 +55,13 @@
 
 		<div class="container">
 			<?php if (is_page( $page = 'Flights' )) : ?>
+              <div class='skyswid'>
+                <h1>Find your flight to Italy!</h1>
+			    <div data-skyscanner-widget="SearchWidget"></div>
+		      </div>
+			<?php endif;?>
+            
+			<?php if (is_category( $category = 'Things to do' )) : ?>
               <div class='skyswid'>
                 <h1>Find your flight to Italy!</h1>
 			    <div data-skyscanner-widget="SearchWidget"></div>
