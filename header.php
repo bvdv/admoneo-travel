@@ -61,7 +61,7 @@
 		      </div>
 			<?php endif;?>
             
-			<?php if (is_category( $category = 'Things to do' )) : ?>
+			<?php if (is_category( $category = 'Flights' )) : ?>
               <div class='skyswid'>
                 <h1>Find your flight to Italy!</h1>
 			    <div data-skyscanner-widget="SearchWidget"></div>

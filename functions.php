@@ -162,7 +162,7 @@ function admoneo_travel_scripts() {
     	wp_enqueue_script( 'skyscanner_widget', 'https://widgets.skyscanner.net/widget-server/js/loader.js', array(), '20180315', true);
     }
     
-    if (is_category( $category = 'Things to do' )){
+    if (is_category( $category = 'Flights' )){
     	wp_enqueue_script( 'skyscanner_widget', 'https://widgets.skyscanner.net/widget-server/js/loader.js', array(), '20180315', true);
     }
 
