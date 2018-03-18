@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	
 
 <nav class="navbar navbar-default">
 		<div class="container">
@@ -47,6 +48,7 @@
 	            	'menu_class'      => 'nav navbar-nav navbar-right',
 	            	'container'       => 'ul',
 	            )); ?>
+
 			</div><!-- /.navbar-collapse -->
 	  	</div><!-- /.container -->
 	</nav>
@@ -68,7 +70,7 @@
 		      </div>
 			<?php endif;?>
 
-			<?php if (is_page( $page = 'Accommodation' )) : ?>
+			<?php if (is_category( $category = 'Accommodation' )) : ?>
               <h1>Find your the best Accommodation in Italy!</h1>
             <?php endif;?>
 			

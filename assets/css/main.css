@@ -42,6 +42,7 @@ body
     font-family: "ionicons";
     /*color: #fff;*/
 }
+/* need comment*/
 .section-title{
 	color: #313131;
 	text-align: center;
@@ -94,6 +95,25 @@ p:hover{
 ||				3. Header
 ==================================================*/
 			/*navbar*/
+
+.navbar{
+
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   width: 100%;
+
+	/*
+	margin-bottom: 0px;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    */
+}
 .skyswid{
 	color: black;
 	margin: auto;
@@ -103,9 +123,48 @@ p:hover{
 .skyswid h1{
 	color: white;
 }	
-.navbar{
-	margin-bottom: 0px;
+
+/* fixed top nav menu*/
+
+/*body {margin:0;}*/
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+*/
+/*
+li {
+    float: left;
+}
+*/
+/*
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+*/
+/*
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+*/
+
+/* end fixed top nav menu */
+
 .section-background{
 	background-repeat: no-repeat;
 	background-position: top;
@@ -113,6 +172,8 @@ p:hover{
 	background: url('../images/section-header.png');
 	text-align: center;
 	background-size: cover;
+	margin-top: 50px;
+
 }
 .page-header{
 	text-transform: uppercase;
