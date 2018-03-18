@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+
 
 <nav class="navbar navbar-default">
 		<div class="container">
@@ -66,7 +66,10 @@
 			<?php if (is_category( $category = 'Flights' )) : ?>
               <div class='skyswid'>
                 <h1>Find your flight to Italy!</h1>
+
+                
 			    <div data-skyscanner-widget="SearchWidget"></div>
+			    
 		      </div>
 			<?php endif;?>
 
