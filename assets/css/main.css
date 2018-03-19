@@ -12,7 +12,8 @@ body
 {
 	font-family: 'Roboto', 'Open-Sans', sans-serif;
 	overflow-x: hidden;
-	color: #fff;
+	/*color: #fff;*/
+	color: black;
 }
 /*Owl Carousel*/
 .owl-prev, .owl-next
@@ -173,7 +174,11 @@ li a:hover:not(.active) {
 	text-align: center;
 	background-size: cover;
 	margin-top: 50px;
+	height: 400px;
 
+}
+.section-background h1{
+	color:white;
 }
 .page-header{
 	text-transform: uppercase;

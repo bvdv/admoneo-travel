@@ -56,24 +56,17 @@
 <section class="section-background">
 
 		<div class="container">
-			<?php if (is_page( $page = 'Flights' )) : ?>
-              <div class='skyswid'>
-                <h1>Find your flight to Italy!</h1>
-			    <div data-skyscanner-widget="SearchWidget"></div>
-		      </div>
-			<?php endif;?>
+			
             
 			<?php if (is_category( $category = 'Flights' )) : ?>
               <div class='skyswid'>
                 <h1>Find your flight to Italy!</h1>
-
-                
-			    <div data-skyscanner-widget="SearchWidget"></div>
-			    
-		      </div>
+                  <div data-skyscanner-widget="SearchWidget"></div>
+			   </div>
 			<?php endif;?>
 
 			<?php if (is_category( $category = 'Accommodation' )) : ?>
+			
               <h1>Find your the best Accommodation in Italy!</h1>
             <?php endif;?>
 			
