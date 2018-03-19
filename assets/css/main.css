@@ -170,7 +170,7 @@ li a:hover:not(.active) {
 	background-repeat: no-repeat;
 	background-position: top;
 	background-attachment: fixed;
-	background: url('../images/section-header.png');
+	background: url('../images/acc-header.png');
 	text-align: center;
 	background-size: cover;
 	margin-top: 50px;
