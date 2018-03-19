@@ -170,6 +170,7 @@ function admoneo_travel_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'admoneo_travel_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */

@@ -24,6 +24,23 @@
 
 
 <nav class="navbar navbar-default">
+Fix menu overlap
+ <?php
+ //Fix menu overlap
+  if (is_admin_bar_showing()) : ?>
+    <style scoped>
+      .admin-menu-fix {
+        min-height: 32px;
+      }
+      @media (max-width: 782px) {
+        .admin-menu-fix {
+          min-height: 46px;
+        }      
+      }
+    </style>
+    <div class="admin-menu-fix"></div>
+  <?php endif; ?>
+
 		<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -33,7 +50,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.php" title="HOME">Admoneo <span>travel</span></a>
+				<a class="navbar-brand" title="HOME">Admoneo <span>travel</span></a>
 			</div> <!-- /.navbar-header -->
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,17 +76,17 @@
 			
             
 			
-
+            
 			<?php if (is_category( $category = 'Accommodation' )) : ?>
 			  <div class="accommodation">
 			    <div class="container">
 			    	
 			      <h1>Accommodation</h1>
 			      Find your the best accommodation in Italy!
-			    </div> 
+			     </div> 
               </div>  
             <?php endif;?>
-
+           
 
             <?php if (is_category( $category = 'Flights' )) : ?>
               <div class="flights">
@@ -77,6 +94,7 @@
                   <div class='skyswid'>
 
                     <h1>Find your flight to Italy!</h1>
+                    
                       <div data-skyscanner-widget="SearchWidget"></div>
 			      </div>
 			    </div>     
@@ -90,6 +108,7 @@
 
                     <h1>Transport</h1>
                     Rail transport in Italy
+                    
                       
 			      
 			    </div>     
