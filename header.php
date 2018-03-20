@@ -24,22 +24,11 @@
 
 
 <nav class="navbar navbar-default">
-Fix menu overlap
- <?php
- //Fix menu overlap
-  if (is_admin_bar_showing()) : ?>
-    <style scoped>
-      .admin-menu-fix {
-        min-height: 32px;
-      }
-      @media (max-width: 782px) {
-        .admin-menu-fix {
-          min-height: 46px;
-        }      
-      }
-    </style>
-    <div class="admin-menu-fix"></div>
-  <?php endif; ?>
+
+ <?php 
+  // Fix menu overlap
+  if ( is_admin_bar_showing() ) echo '<div style="min-height: 32px;"></div>'; 
+  ?>
 
 		<div class="container">
 		<!-- Brand and toggle get grouped for better mobile display -->
