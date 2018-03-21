@@ -16,6 +16,9 @@ get_header();
 ?>
     
 	<div id="primary" class="content-area">
+
+		<?php echo "page";?>
+		
 		<main id="main" class="site-main">
         
 		<?php

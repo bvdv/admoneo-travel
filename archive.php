@@ -9,8 +9,10 @@
 
 get_header();
 ?>
+
   <div class="container"> 
-	<div id="primary" class="content-area">
+  	
+  	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
