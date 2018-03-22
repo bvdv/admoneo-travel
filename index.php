@@ -14,10 +14,10 @@
 
 get_header();
 ?>
-    
+    <?php echo "index";?>
 
 	<div id="primary" class="content-area">
-		<?php echo "index";?>
+		
 		<main id="main" class="site-main">
         
 		<?php

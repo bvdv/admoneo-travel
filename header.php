@@ -65,8 +65,7 @@
 			
             
 			
-            
-			<?php if (is_category( $category = 'Accommodation' )) : ?>
+			<?php if (is_category( $category = 'Accommodation' ) || is_page ($page = 'home')) : ?>
 			  <div class="accommodation">
 			    <div class="container">
 			    	
