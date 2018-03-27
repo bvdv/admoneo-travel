@@ -60,6 +60,7 @@ body
 }
 p{
 	color: #969595;
+	word-wrap: break-word;
 }
 .border-radius{
 	border-radius: 0 !important;
