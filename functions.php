@@ -121,6 +121,10 @@ add_action( 'widgets_init', 'admoneo_travel_widgets_init' );
  */
 function admoneo_travel_scripts() {
 	wp_enqueue_style( 'admoneo-travel-style', get_stylesheet_uri() );
+
+    // Enqueue Google Font
+    wp_enqueue_style( 'at-fonts', $src = 'https://fonts.googleapis.com/css?family=Open+Sans');
+
     ////
 	//custom styles
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '3.3.7' );

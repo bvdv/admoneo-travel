@@ -10,11 +10,15 @@ html
 }
 body
 {
-	font-family: 'Roboto', 'Open-Sans', sans-serif;
-	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+    
+    overflow-x: hidden;
 	/*color: #fff;*/
 	color: black;
+	
 }
+
+
 
 /*Owl Carousel*/
 .owl-prev, .owl-next
@@ -189,6 +193,8 @@ li a:hover:not(.active) {
 	margin-top: 50px;
 	height: 340px;
 	color: white;
+	
+	
 }
 
 .flights{
