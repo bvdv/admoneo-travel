@@ -123,7 +123,7 @@ function admoneo_travel_scripts() {
 	wp_enqueue_style( 'admoneo-travel-style', get_stylesheet_uri() );
 
     // Enqueue Google Font
-    wp_enqueue_style( 'at-fonts', $src = 'https://fonts.googleapis.com/css?family=Open+Sans');
+    wp_enqueue_style( 'Google-fonts', $src = 'https://fonts.googleapis.com/css?family=Roboto');
 
     ////
 	//custom styles
