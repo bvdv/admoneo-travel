@@ -32,7 +32,7 @@
 	</header><!-- .entry-header -->
 
 	<?php admoneo_travel_post_thumbnail(); ?>
-    <div class="container">
+    
 	  <div class="entry-content">
 		<?php
 		the_content( sprintf(
@@ -54,7 +54,7 @@
 		) );
 		?>
 	  </div><!-- .entry-content -->
-    </div>
+    
 	<footer class="entry-footer">
 		<?php admoneo_travel_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
