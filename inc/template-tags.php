@@ -151,7 +151,7 @@ endif;
  * Custom background image and title depending on category
  *
  */
-function header_custom_title()
+function custom_header_title()
 {
 	 if ((is_category( $category = 'Accommodation' )) || ( is_home() )) : ?>
 			  <div class="accommodation">

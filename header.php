@@ -62,7 +62,7 @@
 
 
 		
-     <?php header_custom_title(); ?>
+     <?php custom_header_title(); ?>
 
 
 
