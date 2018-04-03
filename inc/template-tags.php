@@ -153,55 +153,44 @@ endif;
  */
 function custom_header_title()
 {
-	 if ((is_category( $category = 'Accommodation' )) || ( is_home() )) : ?>
-			  <div class="accommodation">
-			    <div class="container">
-			    	
-			      <h1>Accommodation</h1>
-			      Find your the best accommodation in Italy!
-			     </div> 
-              </div>  
-            <?php endif;?>
+	if ((is_category( $category = 'Accommodation' )) || ( is_home() )) : ?>
+		<div class="accommodation">
+			<div class="container">
+			    <h1>Accommodation</h1>
+			    Find your the best accommodation in Italy!
+			</div> 
+        </div>  
+    <?php endif;?>
            
-
-            <?php if (is_category( $category = 'Flights' )) : ?>
-              <div class="flights">
-                <div class="container">	
-                  <div class='skyswid'>
-
+    <?php if (is_category( $category = 'Flights' )) : ?>
+        <div class="flights">
+            <div class="container">	
+                <div class='skyswid'>
                     <h1>Find your flight to Italy!</h1>
-                    
-                      <div data-skyscanner-widget="SearchWidget"></div>
-			      </div>
-			    </div>     
-			  </div>   
-			<?php endif;?>
+                    <!-- Skyscanner Widget -->
+                    <div data-skyscanner-widget="SearchWidget"></div>
+                    <!-- # -->
+			    </div>
+			</div>     
+	    </div>   
+	<?php endif;?>
 
-			<?php if (is_category( $category = 'Transport' )) : ?>
-              <div class="transport">
-                <div class="container">	
-                  
+	<?php if (is_category( $category = 'Transport' )) : ?>
+        <div class="transport">
+            <div class="container">	
+                <h1>Transport</h1>
+                Rail transport in Italy
+            </div>     
+		</div>   
+	<?php endif;?>
 
-                    <h1>Transport</h1>
-                    Rail transport in Italy
-                    
-                      
-			      
-			    </div>     
-			  </div>   
-			<?php endif;?>
-
-			<?php if (is_category( $category = 'Things to do' )) : ?>
-              <div class="thingstodo">
-                <div class="container">	
-                  
-
-                    <h1>Things to do</h1>
-                    Things to do
-                      
-			      
-			    </div>     
-			  </div>   
-			<?php endif;
+	<?php if (is_category( $category = 'Things to do' )) : ?>
+        <div class="thingstodo">
+            <div class="container">	
+                <h1>Things to do</h1>
+                Things to do
+            </div>     
+		</div>   
+	<?php endif;
 }
 ?>
