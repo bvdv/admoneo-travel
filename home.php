@@ -4,7 +4,7 @@ get_header();
 
   
 <?php
-echo "string";
+
 global $post;
 $args = array( 'posts_per_page' => 3, 'category_name' => 'accommodation' );
 $lastposts = get_posts( $args );
