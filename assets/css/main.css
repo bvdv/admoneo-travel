@@ -47,6 +47,8 @@ body
     font-family: "ionicons";
     /*color: #fff;*/
 }
+
+
 /* need comment*/
 .section-title{
 	color: #313131;
@@ -61,18 +63,19 @@ body
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
+
+/*in use*/
 p{
 	color: #969595;
 	word-wrap: break-word;
 }
-.border-radius{
-	border-radius: 0 !important;
-	border-color: #60c9eb;
-	height: 45px;
-}
+
+
 p:hover{
 	cursor: default;
 }
+
+/*in use*/
 .navbar-toggle {
     background-color: rgb(96, 201, 235);
     border: 1px solid rgb(96, 201, 235);
@@ -91,12 +94,7 @@ p:hover{
 .navbar-toggle:hover .icon-bar, .navbar-toggle:focus .icon-bar {
     background-color: rgb(96, 201, 235);
 }
-.form-control:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
+
 /*=================================================
 ||				3. Header
 ==================================================*/
@@ -129,59 +127,7 @@ p:hover{
 .skyswid h1{
 	color: white;
 }	
-/* fixed top nav menu*/
 
-/*body {margin:0;}*/
-/*
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-*/
-/*
-li {
-    float: left;
-}
-*/
-/*
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-*/
-/*
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-*/
-
-/* end fixed top nav menu */
-/*
-.section-background{
-	background-repeat: no-repeat;
-	background-position: top;
-	background-attachment: fixed;
-	background: url('../images/acc-header.png');
-	text-align: center;
-	background-size: cover;
-	margin-top: 50px;
-	height: 400px;
-
-}
-*/
 .accommodation{
 	background-repeat: no-repeat;
 	background-position: top;
@@ -241,6 +187,8 @@ li a:hover:not(.active) {
 .thingstodo h1{
 	margin-top: 160px;
 }
+
+/*
 .page-header{
 	text-transform: uppercase;
 	color: #fff;
@@ -250,30 +198,9 @@ li a:hover:not(.active) {
     padding-bottom: 10px;
     font-size: 34px;
 }
-.breadcrumb{
-    list-style: none;
-    background-color: transparent;
-    border-radius: 0px;
-}
-.breadcrumb .active{
-	color: #fff;
-}
-.breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #fff;
-    content: "\f3d3";
-    font-family: "ionicons";
-}
-.breadcrumb a{
-	color: #fff;
-	border: 1px solid transparent;
-	text-decoration: none;
-	padding: 5px;
-}
-.breadcrumb a:hover{
-	color: #fff;
-	border: 1px solid #fff;
-}			
+
+*/
+
 .navbar-default .navbar-brand{
 	border: 1px solid transparent;
 	color: #60c9eb;
@@ -328,235 +255,54 @@ ul.nav.navbar-nav.navbar-right{
     color: #60c9eb;
     background: #e8f9ff;
 }
-		/*Home*/
-.flexslider{
-	text-align: center;
-	text-transform: uppercase;
-	color: #fff;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	overflow-x: hidden;
-	background: transparent;
-	background-image: url('../images/header.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 
-}
-.slider-item{
-	background-size: inherit;
-	background-position: left bottom;
-	background-repeat: no-repeat;
-}
-.inner-intro{
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-}
-.intro{
-	display: table;
-	text-align: center;
-	width: 100%;
-	height: 100vh;
-}
-.header-title{
-	font-size: 34px;
-	font-weight: 400;
-}
-.header-title span{
-	font-weight: 700;
-}
-.header-sub-title{
-	font-size: 14px;
-	color: #fff;
-	margin: 20px 40px 25px;
-}
-.custom-btn{
-    color: #FFF;
-    background-color: transparent;
-    border-color: #FFF;
-    border-radius: 0px;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 400;
-    transition: all .4s ease-in-out;
-}
-.custom-btn:hover{
-	background: #fff;
-	color: #583b54;
-}
+
+		/*Home*/
+
+
 /*=================================================
 ||				4. Find a Tour
 ==================================================*/
-.form-dropdown{
-	margin-top: -25px;
-}
-.custom-addon{
-	background: #fff;
-}
-.border-right{
-	border-right: 0px;
-}
-.custom-button{
-	background: #60c9eb;
-	color: #fff;
-	width: 100%;
-	text-align: center;
-	padding: 10px;
-	font-size: 16px;
-	transition: all .4s ease-in-out;
-}
-.custom-button:hover{
-	background: #53B1DE;
-	border-color: #53B1DE;
-	color: #fff;
-}
-.tour .input-group{
-	margin-bottom: 22px;
-}
+
+
+
+
 /*=================================================
 ||				5. Our Blazzing offers
 ==================================================*/
-.offer{
-	color: black;
-	text-align: center;
-	background: #f9f9f9;
-}
-.offer-item{
-	background: #fff;
-	letter-spacing: 1px;
-	padding: 30px;
-	transition: all .7s ease-in;
-	margin: 10px 0px;
-}
-.icon{
-	padding: 20px 0;
-	font-size: 35px;
-	color: #60c9eb;
-}
-.offer-item h3{
-	padding-bottom: 40px;
-	margin: 0px;
-	font-size: 15px;
-}
-.offer-item p{
-	padding-bottom: 20px;
-	font-size: 13px;
-	line-height: 170%;
-}
-.offer-item:hover{
-	box-shadow: 0 0 30px rgba(125, 125, 125, 0.1);
-}
+
+
+
 
 
 /*=================================================
 ||				6. Top place to visit
 ==================================================*/
-.visit-item{
-	padding: 0px 15px;
-	transition: all .4s ease-in-out;
-	opacity: .6;
-}
-.visit-item:hover{
-	opacity: 1;
-}
-.visit .owl-theme .owl-controls .owl-nav [class*=owl-]{
-	background: #fff;
-	color: #60c9eb;
-	font-size: 25px;
-}
+
+
+
+
+
 /*=================================================
 ||				7. offer-cta
 ==================================================*/
-.offer-cta{
-	background: url("../images/cta-1.png") right center;
-	background-size: cover;
-}
-.offering{
-	float: right;
-	color: #60c9eb;
-	text-align: center;
-	padding: 32px 0;
-}
-.percent{
-	font-style: italic;
-	font-size: 68px;
-}
-.percent span{
-	font-size: 117px;
-	font-weight: 700;
-	font-style: normal;
-}
-.FTour{
-	font-size: 30px;
-	font-weight: 200;
-	margin-top: -20px;
-}
-.price-btn{
-	background: #60c9eb;
-    color: #fff;
-    border-color: #60c9eb;
-    text-transform: capitalize;
-    margin: 20px;
-}
-.price-btn:hover{
-	color: #60c9eb;
-    background-color: #fff;
-    border-color: #60c9eb;
-}
+
+
+
+
 /*=================================================
 ||				8. Additional Services
 ==================================================*/
-.additional-services .col-md-4{
-	margin-bottom: 30px;
-}
-.custom-table{
-	display: table;
-}
-/*.additional-services .custom-table:hover{
-	box-shadow: 0 0 30px rgba(125, 125, 125, 0.1);
-}*/
-.add-srvc-img{
-	left: 0;
-    top: 0;
-    bottom: 0;
-}
-.add-srvc-heading{
-	color: #313131;
-	font-size: 16px;
-}
-.add-srvc-detail{
-	display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
-    background-color: #f9f9f9;
-    color: #969595;
-    font-size: 13px;
-    padding-right: 30px;
-}
+
+
+
+
 /*=================================================
 ||				9. Sponsor
 ==================================================*/
-.sponsor{
-	text-align: center;
-	background: #f9f9f9;
-}
-.sponsor-item{
-	 /*width: 100px !important; */
-	padding: 30px;
-	opacity: .3;
-	transition: all .4s ease-in-out;
-	margin-bottom: 30px;
-}
-.sponsor-item:hover{
-	opacity: 1;
-}
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-	background: #60c9eb;
-}
-.owl-theme .owl-dots .owl-dot span{
-	background: #f1f1f1;
-}
+
+
+
 /*=================================================
 ||				10. Subscribe
 ==================================================*/
@@ -591,9 +337,8 @@ a.brand-logo:focus, a.brand-logo:hover{
 	border-color: #53B1DE;
 	color: #fff;
 }
-/*.input-group .custom-sub{
-	width: 300px;
-}*/
+
+
 .social-icon{
 	text-align: center;
     list-style-type: none;
