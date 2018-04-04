@@ -129,23 +129,15 @@ function admoneo_travel_scripts() {
 	//custom styles
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '3.3.7' );
 
-    //may be not need
-	wp_enqueue_style( 'ionicons-css', get_template_directory_uri() . '/assets/css/ionicons.min.css', array(), '3.2' );
-
-	wp_enqueue_style( 'owl-carousel-css', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), '2.2.1' );
+    wp_enqueue_style( 'owl-carousel-css', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), '2.2.1' );
 
 	wp_enqueue_style( 'owl-theme-css', get_template_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), '2.2.1' );
 
-    //may be not need
-	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/assets/css/flexslider.css', array(), '2.7.0' );
-
 	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/assets/css/main.css', array(), '3.2');
 
-	//maybe be not need
-	wp_enqueue_style( 'contact-css', get_template_directory_uri() . '/assets/css/contact.css');
-
 	
-
+	
+    //Enqueue scripts
 	wp_enqueue_script( 'admoneo-travel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'admoneo-travel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -155,14 +147,6 @@ function admoneo_travel_scripts() {
 
     wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '2.2.1', true);
     
-    //need ot not???
-	wp_enqueue_script( 'contacts-js', get_template_directory_uri() . '/assets/js/contact.js', array('jquery'), '20151215', true);
-
-    wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.js', array('jquery'), '2.7.0', true);
-
-    wp_enqueue_script( 'cystom-scripts', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '20151215', true);
-
-   
     
     if (is_category( $category = 'Flights' )){
     	wp_enqueue_script( 'skyscanner_widget', 'https://widgets.skyscanner.net/widget-server/js/loader.js', array(), '20180315', true);

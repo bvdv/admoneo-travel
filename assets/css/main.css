@@ -283,6 +283,7 @@ li a:hover:not(.active) {
 	font-weight: 400;
 	letter-spacing: -1px;
 	text-transform: capitalize;
+	margin-left: 0px !important;
 }
 ul.nav.navbar-nav.navbar-right{
 	margin-top: 10px;
