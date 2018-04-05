@@ -230,7 +230,9 @@ ul.nav.navbar-nav.navbar-right{
 }
 .navbar-default .navbar-nav>li>a{
 	/*color: #60c9eb; */
-	color: #000000;
+	/*color: #000000;*/
+	color: darkgray;
+
     padding-right: 10px;
     padding-left: 10px;
     border: 1px solid transparent;
@@ -240,11 +242,16 @@ ul.nav.navbar-nav.navbar-right{
     transition: all .4s ease-in-out;
 }
 .navbar-default .navbar-nav>li>a:hover{
-	color: #60c9eb;
+	/*color: #60c9eb;*/
+	color: #6beb60;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-	color: #60c9eb;
-	background: #e8f9ff;
+	/*color: #60c9eb;*/
+	color: black;
+	/*background: #e8f9ff;*/
+	background: #fff;
+
+	border-bottom-color: black;
 }
 .navbar-nav>li>a {
     padding-top: 8px;
