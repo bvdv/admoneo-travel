@@ -31,7 +31,12 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php admoneo_travel_post_thumbnail(); ?>
+    <?php
+    if (has_post_thumbnail()) : ?>
+      <figure class="thumb-img">
+	    <?php admoneo_travel_post_thumbnail(); ?>
+	  </figure>
+    <?php endif; ?>
     
 	  <div class="entry-content">
 		<?php
