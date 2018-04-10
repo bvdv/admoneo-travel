@@ -27,18 +27,18 @@ get_header();
             <div class="row"> 
 			<?php
 
-			$count_p = 0;
+			$count_post = 0;
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
 				get_template_part( 'template-parts/content', get_post_type() );
-                $count_p += 1;
+                $count_post += 1;
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				if ($count_p % 3 == 0) : 
+				if ($count_post % 3 == 0) : 
 				  //get_template_part( 'template-parts/content', get_post_type() );
 				  ?></div><div class="row"><?php 
                 endif;
