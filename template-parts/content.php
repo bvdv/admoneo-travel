@@ -14,6 +14,7 @@
   endif; 
   post_class();
   ?>>
+  
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) : ?>
@@ -26,12 +27,7 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				admoneo_travel_posted_on();
-				admoneo_travel_posted_by();
-				?>
-			</div><!-- .entry-meta -->
+			
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -67,5 +63,7 @@
 	<footer class="entry-footer">
 		<?php admoneo_travel_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
+
 
