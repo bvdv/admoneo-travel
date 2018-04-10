@@ -22,13 +22,17 @@
 		
 		<?php
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			//the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
 			
 		<?php endif; ?>
+
+
+
+
 	</header><!-- .entry-header -->
 
     <?php
@@ -40,6 +44,9 @@
     
 	  <div class="entry-content">
 		<?php
+		the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+
+		if (is_single()) :
 		the_content( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
@@ -52,6 +59,9 @@
 			),
 			get_the_title()
 		) );
+        endif;
+        the_excerpt();
+
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'admoneo-travel' ),
@@ -60,9 +70,6 @@
 		?>
 	  </div><!-- .entry-content -->
     
-	<footer class="entry-footer">
-		<?php admoneo_travel_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
 

@@ -50,7 +50,7 @@ get_header();
 
 
 
-			///the_posts_navigation();
+			the_posts_navigation();
 
 		else :
 
