@@ -116,10 +116,13 @@ function admoneo_travel_widgets_init() {
 }
 add_action( 'widgets_init', 'admoneo_travel_widgets_init' );
 
-function custom_excerpt_length( $length ) {
+/**
+ * Custom excerpt length
+ */
+function admoneo_travel_excerpt_length( $length ) {
 	return 20;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'admoneo_travel_excerpt_length', 999 );
 
 /**
  * Enqueue scripts and styles.

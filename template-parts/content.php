@@ -15,27 +15,7 @@
   post_class();
   ?>>
   
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) : ?>
-			<h3><?php the_title( '<h3 class="entry-title">', '</h3>' );?></h3>
-		
-		<?php
-		else :
-			//the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
-		if ( 'post' === get_post_type() ) :
-			?>
-			
-		<?php endif; ?>
-
-
-
-
-	</header><!-- .entry-header -->
-
-    <?php
+	<?php
     if (has_post_thumbnail()) : ?>
       <figure class="thumb-img">
 	    <?php admoneo_travel_post_thumbnail(); ?>
