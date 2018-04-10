@@ -9,7 +9,11 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php 
+  if (!is_single()) : post_class('col-sm-4');
+  endif; 
+  post_class();
+  ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) : ?>
@@ -64,3 +68,4 @@
 		<?php admoneo_travel_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
