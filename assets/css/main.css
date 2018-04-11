@@ -100,6 +100,10 @@ p:hover{
 ==================================================*/
 			/*navbar*/
 
+.single-post-style{
+	padding-top: 60px;
+}
+
 .thumb-img{
 	max-height: 500px;
 	max-width: 500px;
