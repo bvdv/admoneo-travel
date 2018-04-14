@@ -39,8 +39,8 @@
 			),
 			get_the_title()
 		) );
+        else : the_excerpt();
         endif;
-        the_excerpt();
 
 
 		wp_link_pages( array(
