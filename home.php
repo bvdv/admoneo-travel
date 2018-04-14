@@ -21,7 +21,7 @@ foreach ( $lastposts as $post ) : setup_postdata( $post ); ?>
 	 
 <?php endforeach; ?>
 </div>	
-	</div>
+</div>
 
 <?php
 wp_reset_postdata();

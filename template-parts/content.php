@@ -9,11 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php 
-  if (!is_single()) : post_class('col-sm-4');
-  endif; 
-  post_class();
-  ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   
 	<?php
     if (has_post_thumbnail()) : ?>
