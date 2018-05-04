@@ -28,5 +28,6 @@ wp_reset_postdata();
 ?>
 
 <?php
+get_sidebar();
 get_footer();
 ?>

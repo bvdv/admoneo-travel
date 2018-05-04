@@ -16,90 +16,56 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-    
+	
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
 
-<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
 
- <?php 
+		<?php 
   // Fix menu overlap
-  if ( is_admin_bar_showing() ) echo '<div style="min-height: 32px;"></div>'; 
-  ?>
-
-		<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" title="HOME">Admoneo <span>travel</span></a>
-			</div> <!-- /.navbar-header -->
-
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				
-				
-
-				
-	            <?php wp_nav_menu(array(
-	            	'theme_location'  => 'menu-1',
-	            	'menu_id'         => 'primary-menu', 
-	            	'menu_class'      => 'nav navbar-nav navbar-right',
-	            	'container'       => 'ul',
-	            )); ?>
-
-			</div><!-- /.navbar-collapse -->
-	  	</div><!-- /.container -->
-	</nav>
-
-
-
-		
-     <?php custom_header_title(); ?>
-
-
-
-<!--	
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'admoneo-travel' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$admoneo_travel_description = get_bloginfo( 'description', 'display' );
-			if ( $admoneo_travel_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $admoneo_travel_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div>
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'admoneo-travel' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+		if ( is_admin_bar_showing() ) echo '<div style="min-height: 32px;"></div>'; 
 			?>
-		</nav>
-	</header>
--->  
 
-	<div id="content" class="site-content">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" title="HOME">Admoneo <span>travel</span></a>
+				</div> <!-- /.navbar-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					
+
+					
+					<?php wp_nav_menu(array(
+						'theme_location'  => 'menu-1',
+						'menu_id'         => 'primary-menu', 
+						'menu_class'      => 'nav navbar-nav navbar-right',
+						'container'       => 'ul',
+						)); ?>
+
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container -->
+			</nav>
+
+
+
+			
+			<?php custom_header_title(); ?>
+
+
+
+
+
+<div id="content" class="site-content">
